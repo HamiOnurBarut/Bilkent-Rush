@@ -1,0 +1,164 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff3cb371"
+    tools:context=".Chooselist">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="468dp"
+        android:layout_gravity="left|top"
+        android:weightSum="1"
+        android:background="#ff3cb371">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUILDINGS"
+            android:id="@+id/button7"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#ffff001e"
+            android:textStyle="bold|italic"
+            android:background="#ffff6600"
+            android:layout_weight="0.33"
+            android:clickable="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COURSES"
+            android:id="@+id/button8"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#ffff001e"
+            android:textStyle="bold|italic"
+            android:background="#cccc6600"
+            android:clickable="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DORMS"
+            android:id="@+id/button9"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#ffff001e"
+            android:textStyle="bold|italic"
+            android:background="#cccc6699"
+            android:clickable="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRAFFIC"
+            android:id="@+id/button10"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#ffff001e"
+            android:textStyle="bold|italic"
+            android:background="#ff9966ff"
+            android:layout_weight="0.29"
+            android:clickable="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MEAL PLACES"
+            android:id="@+id/button11"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#ffff001e"
+            android:textStyle="bold|italic"
+            android:background="#ff9999cc"
+            android:layout_weight="0.33"
+            android:clickable="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUSES"
+            android:id="@+id/button12"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#ffff001e"
+            android:textStyle="bold|italic"
+            android:background="#ff6699cc"
+            android:clickable="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INSTRUCTORS"
+            android:id="@+id/button13"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#ffff001e"
+            android:textStyle="bold|italic"
+            android:background="#ff3399ff"
+            android:clickable="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STAFF"
+            android:id="@+id/button14"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#ffff001e"
+            android:textStyle="bold|italic"
+            android:background="#ff33cc99"
+            android:clickable="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHOPPING"
+            android:id="@+id/button15"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#ffff001e"
+            android:textStyle="bold|italic"
+            android:background="#ff33cc66"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="SCORE"
+        android:id="@+id/button16"
+        android:layout_gravity="left|bottom"
+        android:textSize="30sp"
+        android:textColor="#ffff001e"
+        android:textStyle="bold|italic"
+        android:background="#ff3cb3ff"
+        android:clickable="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:id="@+id/button17"
+        android:layout_gravity="right|bottom"
+        android:textSize="30sp"
+        android:textColor="#ffff001e"
+        android:textStyle="bold|italic"
+        android:background="#ff3cb3ff"
+        android:clickable="true"/>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</FrameLayout>

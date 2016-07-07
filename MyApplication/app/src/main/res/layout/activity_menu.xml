@@ -1,0 +1,105 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000"
+    tools:context=".Menu"
+
+>
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Bilkent Rush"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.64"
+            android:textColor="#ff878787"
+            android:gravity="center_vertical"
+            android:textSize="50sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04"
+            android:textColor="#ffff001e"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Your Quiz"
+            android:id="@+id/button3"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.10"
+            android:textColor="#ffff001e"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Your Question"
+            android:id="@+id/button4"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.10"
+            android:textColor="#ffff001e"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:id="@+id/button5"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.15"
+            android:textColor="#ffff001e"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:id="@+id/button6"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffff001e"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</FrameLayout>

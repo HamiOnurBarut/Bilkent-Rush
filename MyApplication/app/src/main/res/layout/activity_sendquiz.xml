@@ -1,0 +1,228 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".SendQuiz">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="523dp"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffa9a9a9"
+            android:weightSum="1"
+            android:layout_gravity="right|bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Send Quiz"
+                android:id="@+id/textView40"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.16"
+                android:textColor="#ff000000"
+                android:gravity="center_vertical"
+                android:textSize="50sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="QUESTION..."
+                android:id="@+id/textView41"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffffff"
+                android:textSize="30sp"
+                android:layout_weight="0.19"
+                android:textColor="#ff506aff" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:id="@+id/separator1"
+                android:visibility="visible"
+                android:background="#ffa9a9a9"/>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:columnCount="2"
+                android:rowCount="6"
+                android:layout_weight="0.16">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="55dp"
+                    android:text="ANSWER 1..."
+                    android:id="@+id/textView23"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.16"
+                    android:background="#ffffffff"
+                    android:textSize="20sp"
+                    android:textColor="#ff506aff" />
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="55dp"
+                    android:text="ANSWER 2..."
+                    android:id="@+id/textView24"
+                    android:layout_gravity="center_horizontal|right"
+                    android:layout_weight="0.16"
+                    android:background="#ffffffff"
+                    android:textSize="20sp"
+                    android:textColor="#ff506aff" />
+
+                <View
+                    android:layout_width="175dp"
+                    android:layout_height="5dp"
+                    android:id="@+id/separator2"
+                    android:visibility="visible"
+                    android:background="#ffa9a9a9"/>
+
+                <View
+                    android:layout_width="175dp"
+                    android:layout_height="5dp"
+                    android:id="@+id/separator3"
+                    android:visibility="visible"
+                    android:background="#ffa9a9a9"/>
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="55dp"
+                    android:text="ANSWER 3..."
+                    android:id="@+id/textView25"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.16"
+                    android:background="#ffffffff"
+                    android:textSize="20sp"
+                    android:textColor="#ff506aff" />
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="55dp"
+                    android:text="ANSWER 4..."
+                    android:id="@+id/textView26"
+                    android:layout_gravity="center_horizontal|right"
+                    android:layout_weight="0.16"
+                    android:background="#ffffffff"
+                    android:textSize="20sp"
+                    android:textColor="#ff506aff" />
+
+
+                </GridLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.16"
+                android:background="#ffa9a9a9"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="101dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Which one is true?"
+                    android:id="@+id/textView27"
+                    android:layout_weight="0.08"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/radioButton1"
+                    android:layout_weight="0.10"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:singleLine="false"
+                    android:textColor="#ff000000" />
+
+
+                <RadioButton
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/radioButton2"
+                    android:layout_weight="0.10"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:textColor="#ff000000" />
+
+
+                <RadioButton
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:id="@+id/radioButton3"
+                    android:layout_weight="0.10"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:textColor="#ff000000" />
+
+
+                <RadioButton
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:id="@+id/radioButton4"
+                    android:layout_weight="0.10"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:textColor="#ff000000" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:text="SEND "
+            android:id="@+id/button16"
+            android:layout_gravity="left|bottom"
+            android:textSize="30sp"
+            android:textColor="#ffff001e"
+            android:textStyle="bold|italic"
+            android:background="#ff7e807e"
+            android:clickable="true"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:text="BACK"
+            android:id="@+id/button17"
+            android:layout_gravity="right|bottom"
+            android:textSize="30sp"
+            android:textColor="#ffff001e"
+            android:textStyle="bold|italic"
+            android:background="#ff7e807e"
+            android:clickable="true"/>
+    </FrameLayout>
+
+</FrameLayout>

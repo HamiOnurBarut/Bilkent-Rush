@@ -1,0 +1,76 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000"
+    tools:context=".FullscreenActivity"
+    android:visibility="visible">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <FrameLayout
+
+        android:id="@+id/fullscreen1"
+        android:layout_width="match_parent"
+        android:layout_height="582dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#ff000000"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent"
+        android:visibility="visible">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="BILKENT"
+            android:id="@+id/textView1"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#ffff0504"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            android:visibility="visible"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="RUSH"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#ff1820ff"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            android:visibility="visible"
+            android:textSize="50sp" />
+
+        <Button
+            android:layout_width="146dp"
+            android:layout_height="82dp"
+            android:text="START"
+            android:id="@+id/button"
+            android:layout_gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="#ffff001e"
+            android:textSize="30sp"
+            android:clickable="true"
+            android:onClick="onClick" />
+
+        <ImageView
+            android:layout_width="217dp"
+            android:layout_height="217dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal|bottom"
+             />
+
+    </FrameLayout>
+
+</FrameLayout>
